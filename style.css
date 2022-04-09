@@ -1,0 +1,127 @@
+:root{
+    --white:#fff;
+    --rose: #d4c8be;
+    --grass: #7f867b;
+    --linen: #e3e4e0;
+    --oxford: #293242;
+}
+body{
+    padding:0;
+    margin:0;
+    background-color: #DFDBE5;
+    background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%239C92AC' fill-opacity='0.4'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: sans-serif;
+}
+*{
+    box-sizing: border-box;
+}
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+}
+.container{
+    width:1300px;
+    margin: 0 auto;
+}
+header{
+    background-color: var(--linen);
+    padding: .5rem;
+    box-shadow: 0 5px 10px rgba(0,0,0,.1);
+}
+header h1 a{
+    font-size: 24px;
+    color: var(--oxford);
+}
+#contnet .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10rem;
+}
+.search input{
+    display: inline-block;
+    height: 40px;
+    width: 20rem;
+    border:none;
+    padding: .5rem;
+    font-weight: bold;
+}
+.search input:focus{
+    outline: none;
+}
+.search button{
+    display: inline-block;
+    width: 10rem;
+    height: 40px;
+    border: none;
+    background-color: var(--oxford);
+    color: var(--white);
+    cursor: pointer;
+    font-weight: bold;
+}
+#github-user{
+    width: 50%;
+}
+.user-data{
+    display: flex;
+    flex-direction: column;
+}
+.card{
+    background-color: var(--white);
+    padding: 1rem;
+    margin-top: 2rem;
+    border-radius: .5rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .2);
+    color: var(--oxford);
+    display: flex;
+    align-items: center;
+    gap:20px;
+    animation-name: fade;
+    animation-duration: 2s;
+}
+.card h2{
+    font-size: 24px;
+    margin-bottom: .5rem;
+}
+.card h3{
+    font-size: 18px;
+    color: var(--grass);
+    font-weight: normal;
+    margin-bottom: 1rem;
+}
+.card h4{
+    color: red;
+    width: 100%;
+    text-align: center;
+}
+.card .profile-details{
+    display: flex;
+    gap: 1rem;
+}
+.card .profile-details {
+    font-weight: bold;
+}
+.card .profile-details span{
+    color:var(--grass);
+    font-size: 13px;
+    display: inline-block;
+    margin-left: 5px;
+    font-weight: normal;
+}
+.card #profile-image img{
+    display: block;
+    width: 10rem;
+    border-radius: 50%;;
+}
+
+@keyframes fade {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+      opacity: 1;
+    }
+  }
